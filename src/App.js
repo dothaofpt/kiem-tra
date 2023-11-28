@@ -1,4 +1,5 @@
-import React from "react";
+
+    import React from "react";
 import { useState } from "react";
 
 export default function Book() {
@@ -49,10 +50,43 @@ export default function Book() {
             className="list-group-item"
             ng-repeat="show in main.shows | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"
           >
-            <span className="glyphicon glyphicon-star" ng-if="show.favorite" />
-            {" Title "}
-            <span className="badge">Author</span>
+            <span />
+            {" Life of Pi "}
+            <span className="badge">Davan</span>
           </li>
+          <li
+            className="list-group-item"
+            ng-repeat="show in main.shows | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"
+          >
+            <span className="glyphicon glyphicon-star" ng-if="show.favorite" />
+            {" Học code today "}
+            <span className="badge">Fpt</span>
+          </li>
+          <li
+            className="list-group-item"
+            ng-repeat="show in main.shows | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"
+          >
+            <span className="glyphicon glyphicon-star" ng-if="show.favorite" />
+            {" Learn Angular by example "}
+            <span className="badge">Fpt Aptech</span>
+          </li>
+          <li
+            className="list-group-item"
+            ng-repeat="show in main.shows | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"
+          >
+            <span />
+            {" Họ nhà trai "}
+            <span className="badge">Nguyễn Anh Tú</span>
+          </li>
+          <li
+            className="list-group-item"
+            ng-repeat="show in main.shows | filter:main.searchInput | orderBy:main.order.key:main.order.reverse"
+          >
+            <span className="glyphicon glyphicon-star" ng-if="show.favorite" />
+            {" Đôi mắt có lửa "}
+            <span className="badge">Nguyễn Hùng Sơn</span>
+          </li>
+
         </ul>
         <select
           className="form-control pull-right"
